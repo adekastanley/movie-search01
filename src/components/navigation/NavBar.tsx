@@ -1,4 +1,5 @@
 import siteIcons from "@/assets/icons/siteIcons";
+import siteLinks from "@/routes/links";
 
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
@@ -47,9 +48,11 @@ const MobileNav = () => {
 							</DrawerDescription>
 						</DrawerHeader> */}
 						<DrawerFooter>
-							<Button variant={"outline"} className="">
-								Sign Up
-							</Button>
+							<Link to={"/sign-up"}>
+								<Button variant={"outline"} className="w-full">
+									Sign Up
+								</Button>
+							</Link>
 							<Button>Download On Android</Button>
 							{/* <DrawerClose>
 								<Button variant="outline">Cancel</Button>
@@ -64,7 +67,7 @@ const MobileNav = () => {
 const PcNav = () => {
 	return (
 		<header className="w-full flex justify-between  items-center px-28 mt-5 absolute ">
-			<Link to={"/"}>
+			<Link to={siteLinks.signUp}>
 				<img className="w-20" src={siteIcons.logo} alt="qupid logo" />
 			</Link>
 			<div className="flex gap-10">
