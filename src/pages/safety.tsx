@@ -1,10 +1,10 @@
 import SafetyTips from "@/components/Pages/Safety/SafetyTips";
 
-const safety = () => {
+const SafetyTipsPage = () => {
 	return (
 		<div>
 			<SafetyTips />
 		</div>
 	);
 };
-export default safety;
+export default SafetyTipsPage;

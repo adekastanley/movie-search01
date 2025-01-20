@@ -1,9 +1,9 @@
 import HelpAndSupport from "@/components/Pages/HelpAndSupport/HelpAndSupport";
-const helpAndSupport = () => {
+const HelpPage = () => {
 	return (
 		<>
 			<HelpAndSupport />
 		</>
 	);
 };
-export default helpAndSupport;
+export default HelpPage;
