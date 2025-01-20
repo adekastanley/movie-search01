@@ -11,6 +11,7 @@ import SignUp from "@/pages/signUp";
 import CookiePolicy from "@/pages/cookiePolicy";
 import HelpPage from "@/pages/helpAndSupport";
 import SafetyTipsPage from "@/pages/safety";
+
 const router = createBrowserRouter([
 	{
 		// path: "/",
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
 			{
 				path: siteLinks.safety,
 				element: <SafetyTipsPage />,
+			},
+			{
+				path: siteLinks.help,
+				element: <HelpPage />,
 			},
 		],
 	},
