@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -6,7 +6,7 @@ import {
 	BreadcrumbList,
 	BreadcrumbPage,
 	BreadcrumbSeparator,
-} from "~/components/ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
 
 const CookiePolicy = () => {
 	return (
