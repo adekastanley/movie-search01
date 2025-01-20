@@ -1,4 +1,4 @@
-import CookiePolicy from "~/components/Pages/CookiePolicy/CookiePolicy";
+import CookiePolicy from "@/components/Pages/CookiePolicy/CookiePolicy";
 
 const cookiePolicy = () => {
 	return (

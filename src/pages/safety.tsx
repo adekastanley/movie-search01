@@ -1,4 +1,4 @@
-import SafetyTips from "~/components/Pages/Safety/SafetyTips";
+import SafetyTips from "@/components/Pages/Safety/SafetyTips";
 
 const safety = () => {
 	return (

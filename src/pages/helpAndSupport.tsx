@@ -1,4 +1,4 @@
-import HelpAndSupport from "~/components/Pages/HelpAndSupport/HelpAndSupport";
+import HelpAndSupport from "@/components/Pages/HelpAndSupport/HelpAndSupport";
 const helpAndSupport = () => {
 	return (
 		<>

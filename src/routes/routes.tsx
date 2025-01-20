@@ -1,22 +1,29 @@
 import { createBrowserRouter } from "react-router-dom";
+import siteLinks from "./links";
 import Base from "@/layouts/Base";
+
 import Home from "@/pages/home";
+import Terms from "@/pages/terms";
 
 import Login from "@/pages/login";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		// path: "/",
 		element: <Base />,
 		children: [
 			{
-				path: "/",
+				path: siteLinks.Home,
 				element: <Home />,
+			},
+			{
+				path: siteLinks.terms,
+				element: <Terms />,
 			},
 		],
 	},
 	{
-		path: "/login",
+		path: siteLinks.Login,
 		element: <Login />,
 	},
 ]);
