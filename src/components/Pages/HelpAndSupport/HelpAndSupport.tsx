@@ -5,7 +5,7 @@ import {
 	BreadcrumbList,
 	BreadcrumbPage,
 	BreadcrumbSeparator,
-} from "~/components/ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
 const HelpAndSupport = () => {
 	return (
 		<main className="min-h-screen pt-20 lg:pt-28 px-2 lg:px-28">
