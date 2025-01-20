@@ -23,7 +23,7 @@ const More = () => {
 					return (
 						<div
 							key={index}
-							className="rounded-xl shadow-lg bg-[#F5F5F5] px-5 sm:px-10 sm:py-16 lg:px-5 lg:py-10 py-2 flex flex-col gap-2"
+							className="rounded-xl shadow-lg bg-[#F5F5F5] px-5 sm:px-10 sm:py-16 lg:px-5 lg:py-10 py-8 flex flex-col gap-2"
 						>
 							<h5 className="font-semibold">{item.title}</h5>
 							<p>{item.text}</p>

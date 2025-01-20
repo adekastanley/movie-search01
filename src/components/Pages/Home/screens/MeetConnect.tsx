@@ -66,7 +66,7 @@ const DesignedToHelp = () => {
 			<div className="w-full  flex justify-center items-center ">
 				<img className="lg:h-[40rem]" src={siteImages.app1} alt="qupid app" />
 			</div>
-			<div className="w-full ">
+			<div className="w-full  max-sm:mt-10">
 				<h3 className="font-bold text-3xl lg:text-6xl">
 					Designed to Help You <br /> Connect in Every Way.
 				</h3>

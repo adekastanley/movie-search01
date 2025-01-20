@@ -6,7 +6,7 @@ const Events = () => {
 				Events Near You—Discover Local Experiences
 			</h2>
 			<div className="flex flex-col sm:flex-row gap-5">
-				<div className="w-full gap-5 flex flex-col justify-between order-2 sm:order-none">
+				<div className="w-full  flex flex-col justify-between order-2 sm:order-none gap-10">
 					<div className="flex flex-col   gap-3">
 						<h3 className="font-semibold text-xl">Live Music Performances</h3>
 						<p>
@@ -27,7 +27,7 @@ const Events = () => {
 				<div className="w-full order-1 sm:order-none">
 					<img className="w-full" src={siteImages.heroMobile} alt="" />
 				</div>
-				<div className="w-full flex flex-col justify-between order-3 sm:order-none">
+				<div className="w-full flex flex-col justify-between order-3 sm:order-none gap-10">
 					<div className="flex flex-col justify-between gap-3">
 						<h3 className="font-semibold text-xl">Themed Parties</h3>
 						<p>
