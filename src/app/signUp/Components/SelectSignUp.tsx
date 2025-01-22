@@ -16,7 +16,7 @@ const SelectSignUp = ({ setShowEmailSignUp }: any) => {
 				<DialogTitle className="">
 					<img
 						className="w-[10rem] mx-auto"
-						src={siteIcons.logo2}
+						src={siteIcons.logo3}
 						alt="qupid logo"
 					/>
 				</DialogTitle>
@@ -40,6 +40,10 @@ const SelectSignUp = ({ setShowEmailSignUp }: any) => {
 					<Link className="underline" to={"/login"}>
 						Login
 					</Link>
+				</p>
+
+				<p className="text-center text-xs mt-5">
+					© [2024] COVA Technologies. All rights reserved.
 				</p>
 			</div>
 		</DialogContent>
