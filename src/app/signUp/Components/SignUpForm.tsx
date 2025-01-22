@@ -53,19 +53,19 @@ const SignUpForm = () => {
 			</DialogHeader>
 			<div className="w-full flex flex-col gap-2">
 				<form className="flex flex-col gap-3 w-full">
-					<div className="grid w-full max-w-sm items-center gap-1.5 ">
+					<div className="grid w-full  items-center gap-1.5 ">
 						<Label htmlFor="name">Your name</Label>
 						<Input className="" id="name" type="text" />
 					</div>
-					<div className="grid w-full max-w-sm items-center gap-1.5 ">
+					<div className="grid w-full  items-center gap-1.5 ">
 						<Label htmlFor="username">Choose your username</Label>
 						<Input id="username" type="text" />
 					</div>
-					<div className="grid w-full max-w-sm items-center gap-1.5 ">
+					<div className="grid w-full  items-center gap-1.5 ">
 						<Label htmlFor="dob"></Label>Your birthday is
 						<Input id="dob" type="text" />
 					</div>
-					<div className="grid w-full max-w-sm items-center gap-1.5 ">
+					<div className="grid w-full  items-center gap-1.5 ">
 						<Label htmlFor="gender"></Label>I am a
 						<Select>
 							<SelectTrigger className="">
@@ -78,7 +78,7 @@ const SignUpForm = () => {
 							</SelectContent>
 						</Select>
 					</div>
-					<div className="grid w-full max-w-sm items-center gap-1.5 ">
+					<div className="grid w-full  items-center gap-1.5 ">
 						<Label htmlFor="password"></Label>Password
 						<Input id="password" type="password" />
 					</div>
