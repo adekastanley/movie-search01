@@ -5,6 +5,8 @@ import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
+import SignUpModelPc from "@/app/signUp/SignUpModelPc";
+
 import {
 	Drawer,
 	// DrawerClose,
@@ -66,12 +68,12 @@ const MobileNav = () => {
 };
 const PcNav = () => {
 	return (
-		<header className="w-full flex justify-between  items-center px-28 mt-5 absolute ">
+		<header className="w-full flex justify-between  items-center px-28 mt-5 absolute z-10 ">
 			<Link to={siteLinks.signUp}>
 				<img className="w-20" src={siteIcons.logo} alt="qupid logo" />
 			</Link>
 			<div className="flex gap-10">
-				<Button className="rounded-xl">Sign Up</Button>
+				<SignUpModelPc />
 				<Button className="rounded-xl bg-transparent text-primary outline outline-1 outline-primary hover:bg-primary hover:text-white ">
 					Download On Android
 				</Button>
