@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 import SignUpModelPc from "@/app/signUp/SignUpModelPc";
+import SignUpModelMobile from "@/app/signUp/SignUpModelMobile";
 
 import {
 	Drawer,
@@ -50,11 +51,8 @@ const MobileNav = () => {
 							</DrawerDescription>
 						</DrawerHeader> */}
 						<DrawerFooter>
-							<Link to={"/sign-up"}>
-								<Button variant={"outline"} className="w-full">
-									Sign Up
-								</Button>
-							</Link>
+							<SignUpModelMobile />
+
 							<Button>Download On Android</Button>
 							{/* <DrawerClose>
 								<Button variant="outline">Cancel</Button>
