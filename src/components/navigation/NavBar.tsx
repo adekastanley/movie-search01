@@ -72,7 +72,7 @@ const PcNav = () => {
 			</Link>
 			<div className="flex gap-10">
 				<SignUpModelPc />
-				<Button className="rounded-xl bg-transparent text-primary outline outline-1 outline-primary hover:bg-primary hover:text-white ">
+				<Button className="rounded-xl bg-primary text-white outline outline-1 outline-primary hover:bg-transparent hover:text-primary ">
 					Download On Android
 				</Button>
 			</div>

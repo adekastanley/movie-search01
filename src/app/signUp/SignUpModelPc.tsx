@@ -17,7 +17,7 @@ const SignUpModelPc = () => {
 
 	return (
 		<Dialog>
-			<DialogTrigger className=" px-8 rounded-xl outline outline-1 outline-primary hover:bg-primary hover:text-white">
+			<DialogTrigger className=" px-8 text-primary rounded-xl outline outline-1 outline-primary hover:bg-primary hover:text-white">
 				Sign Up
 			</DialogTrigger>
 
