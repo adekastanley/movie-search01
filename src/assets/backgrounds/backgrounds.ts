@@ -1,7 +1,5 @@
-import loveBg from "./loveBg.png";
-import loveBg2 from "./loveBg2.png";
+import one from "./one.jpg";
 
 export default {
-	loveBg,
-	loveBg2,
+	one,
 };
