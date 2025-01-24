@@ -15,8 +15,8 @@ const One = () => {
 
 				<div className="">
 					<img
-						className="w-[60rem] h-auto  object-fill rounded-lg"
-						src={backgrounds.one}
+						className="w-[60rem] h-auto  object-fill sm:rounded-lg"
+						src={backgrounds.two}
 						alt=""
 					/>
 				</div>
@@ -28,7 +28,7 @@ const One = () => {
 					ducimus similique omnis?
 				</p>
 			</section>
-			<section>
+			<section className="flex">
 				<div></div>
 				<div></div>
 			</section>
