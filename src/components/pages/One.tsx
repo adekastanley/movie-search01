@@ -5,7 +5,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const One = () => {
 	const isMobile = useIsMobile();
 	return (
-		<div className=" min-h-screen relative bg-black">
+		<div className=" h-screen relative bg-black">
 			<section className="w-full h-full flex  pt-40 flex-col items-center gap-5 bg-transparent">
 				<h1 className="font-bold text-2xl sm:text-6xl text-white text-center ">
 					GDG Web Development Track
