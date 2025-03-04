@@ -7,14 +7,17 @@ import { Button } from "@/components/ui/button";
 
 interface SearchProps {
 	onSearchResults: (results: any) => void;
+	flipSkeleton: (value: boolean) => void;
 }
 
-export default function Search({ onSearchResults }: SearchProps) {
+export default function Search({ onSearchResults, flipSkeleton }: SearchProps) {
 	const [query, setQuery] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
 
 	const fetchMovieData = async (searchQuery: string) => {
 		setIsLoading(true);
+		flipSkeleton(true);
+
 		// console.log(import.meta.env.VITE_API_KEY);
 		// imp
 		try {
@@ -29,17 +32,20 @@ export default function Search({ onSearchResults }: SearchProps) {
 			}
 			const data = await response.json();
 			// console.log(data);
+
 			onSearchResults(data.Search);
 		} catch (error) {
 			console.error("Error fetching data:", error);
 			onSearchResults(null); // Pass null to indicate an error
 		} finally {
+			flipSkeleton(false);
 			setIsLoading(false);
 		}
 	};
 
 	const handleSubmit = (event: React.FormEvent) => {
 		event.preventDefault();
+
 		if (query.trim()) {
 			fetchMovieData(query);
 		}
@@ -48,16 +54,18 @@ export default function Search({ onSearchResults }: SearchProps) {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className="w-1/2 bg-white p-8 rounded-lg flex flex-col items-center gap-5"
+			className="w-full sm:w-1/3 mx-2 bg-white p-8 rounded-lg flex flex-col items-center gap-5"
 		>
 			<Input
 				type="text"
 				placeholder="Enter movie title"
 				value={query}
-				onChange={(e) => setQuery(e.target.value)}
+				onChange={(e) => {
+					setQuery(e.target.value);
+				}}
 				disabled={isLoading}
 			/>
-			<Button type="submit" disabled={isLoading}>
+			<Button type="submit" disabled={isLoading} className="w-full">
 				{isLoading ? "Searching..." : "Search"}
 			</Button>
 		</form>
