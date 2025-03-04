@@ -29,7 +29,7 @@ export default function Homepage() {
 	console.log("this is results", results);
 	return (
 		<section className=" w-full  relative bg-[url(https://images.pexels.com/photos/6235464/pexels-photo-6235464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)] bg-cover bg-center bg-no-repeat bg-fixed">
-			<div className="h-[80vh] lg:h-screen  w-full flex justify-center items-center relative ">
+			<div className="h-screen  w-full flex justify-center items-center relative ">
 				<Search
 					onSearchResults={handleSearchResults}
 					flipSkeleton={flipSkeleton}
